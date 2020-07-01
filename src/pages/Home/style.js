@@ -45,7 +45,7 @@ export const Sobre = styled.section`
 
     padding: 0 20%;
 
-    height: 506px;
+    height: 100vh;
 
     background-color: ${props => props.theme.colors.secundaria};
 
@@ -69,7 +69,7 @@ export const Sobre = styled.section`
 export const Skills = styled.section`
      padding: 0 20%;
      margin: 0 auto;
-     height: 430px;
+     height: 100vh;
      width: 100%;
      
      display: flex;
@@ -139,7 +139,7 @@ export const Websites = styled.section`
      
     padding: 50px 20%;
     background-color: ${props => props.theme.colors.secundaria};
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,7 +176,7 @@ export const Websites = styled.section`
 export const Contato = styled.section`
 
     padding: 100px 20%;
-    height: 620px;
+    height: 100vh;
 
     display: flex;
         flex-direction: column;
