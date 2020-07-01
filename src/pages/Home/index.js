@@ -1,5 +1,5 @@
 import React from "react"
-
+import Header from '../../components/Header'
 
 import {Infos, Imagem, Sobre, Skills, Websites, Contato, ListaSkill} from './style'
 import bg from "../../assets/bg.png"
@@ -13,6 +13,7 @@ const Home = () => {
 
     return (
         <>
+          <Header />
         <section>
             <Infos>
              <h1>Pablo<br/>Rosa</h1>
@@ -24,7 +25,7 @@ const Home = () => {
             </Imagem>
         </section>
 
-        <Sobre>
+        <Sobre id='Sobre'>
             <h1>Sobre Mim</h1>
             <p>Hi, I'm Denis – UX/UI designer   from Minsk. 
             <br/>
@@ -42,7 +43,7 @@ const Home = () => {
             </p>
         </Sobre>
 
-        <Skills>
+        <Skills id='Habilidades'>
             <h1>Skills</h1>
 
             <p>Eu trabalho com aplicativos como:</p>
@@ -62,7 +63,7 @@ const Home = () => {
            
         </Skills>
 
-        <Websites>
+        <Websites id='Websites'>
             <h1>Websites</h1>
             <ul>
             
@@ -77,7 +78,7 @@ const Home = () => {
 
         </Websites>
 
-        <Contato>
+        <Contato id='Contato'> 
 
             <h1>Contatos</h1>
             
