@@ -1,15 +1,22 @@
-import React from "react"
-import Header from '../../components/Header'
+import React, {useEffect} from "react"
+import {Link} from 'react-router-dom'
 
-import {Infos, Imagem, Sobre, Skills, Websites, Contato, ListaSkill} from './style'
+
+import Header from '../../components/Header'
+import Contact from "../../components/Contato"
+
+import {Infos, Imagem, Sobre, Skills, Websites, ListaSkill} from './style'
 import bg from "../../assets/bg.png"
 
 
 
-import {skills, portfolio, contatos} from "./imagens"
+import {skills, portfolio} from "../../imagens"
 
 const Home = () => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <>
@@ -70,7 +77,7 @@ const Home = () => {
                 {portfolio.map(portfolio => (
                     <li>
                          <img src={portfolio.imagem} alt="" srcset=""/>
-                           <p>{portfolio.spam}</p>
+                           <Link to={`/project/${portfolio.id}`}>{portfolio.spam}</Link>
                     </li>
                 ))}
 
@@ -78,29 +85,8 @@ const Home = () => {
 
         </Websites>
 
-        <Contato id='Contato'> 
+        <Contact />
 
-            <h1>Contatos</h1>
-            
-            <div>
-
-                <button>Envie uma mensagem</button>
-
-                <ul>
-                    
-                    {contatos.map(contato => (
-                        <li>
-                            <img src={contato.imagem} alt="" srcset=""/>
-                        </li>
-                    ))}
-
-                </ul>
-
-            </div>
-
-            <p>Obrigado pelo seu tempo!</p>
-
-        </Contato>
         </>
     )
 }

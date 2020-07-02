@@ -1,25 +1,25 @@
 //SKILS
 
-import AE from "../../assets/AE.png"
-import AI from "../../assets/AI.png"
-import Figma from "../../assets/Figma.png"
-import JS from "../../assets/JS.png"
-import LR from "../../assets/LR.png"
-import PR from "../../assets/PR.png"
-import React from "../../assets/React.png"
-import ReactNative from "../../assets/ReactNative.png"
-import NodeJS from "../../assets/NodeJS.png"
+import AE from "./assets/AE.png"
+import AI from "./assets/AI.png"
+import Figma from "./assets/Figma.png"
+import JS from "./assets/JS.png"
+import LR from "./assets/LR.png"
+import PR from "./assets/PR.png"
+import React from "./assets/React.png"
+import ReactNative from "./assets/ReactNative.png"
+import NodeJS from "./assets/NodeJS.png"
 
 
 
 //PORTFOLIO
 
-import reebok from "../../assets/reebok_web.png"
+import reebok from "./assets/reebok_web.png"
 
 
 //CONTATOS
 
-import LinkeIn from "../../assets/LinkeIn.png"
+import LinkeIn from "./assets/LinkeIn.png"
 
 export const skills = [
     {
@@ -68,22 +68,26 @@ export const skills = [
 export const portfolio = [
     {
         spam: "Rebook Store - Concept",
-        imagem: reebok
+        imagem: reebok,
+        id: 1
     },
 
     {
         spam: "Rebook Store - Concept",
-        imagem: reebok
+        imagem: reebok,
+        id: 2
     },
 
     {
         spam: "Rebook Store - Concept",
-        imagem: reebok
+        imagem: reebok,
+        id: 3
     },
 
     {
         spam: "Rebook Store - Concept",
-        imagem: reebok
+        imagem: reebok,
+        id: 4
     },
 ]
 
