@@ -5,6 +5,7 @@ export const Infos = styled.div`
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 65%;
 
         margin: 40px auto;
@@ -18,6 +19,12 @@ export const Infos = styled.div`
     p{
         font-size: 18px;
         font-weight: 400;
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
+
     }
 
 `

@@ -68,25 +68,29 @@ export const skills = [
 export const portfolio = [
     {
         spam: "Rebook Store - Concept",
-        imagem: reebok,
+        video: reebok,
+        imagem: [reebok, reebok, reebok, reebok, reebok],
         id: 1
     },
 
     {
         spam: "Rebook Store - Concept",
-        imagem: reebok,
+        video: reebok,
+        imagem: [reebok, reebok, reebok, reebok, reebok],
         id: 2
     },
 
     {
         spam: "Rebook Store - Concept",
-        imagem: reebok,
+        video: reebok,
+        imagem: [reebok, reebok, reebok, reebok, reebok],
         id: 3
     },
 
     {
         spam: "Rebook Store - Concept",
-        imagem: reebok,
+        video: reebok,
+        imagem: [reebok, reebok, reebok, reebok, reebok],
         id: 4
     },
 ]

@@ -76,7 +76,7 @@ const Home = () => {
             
                 {portfolio.map(portfolio => (
                     <li>
-                         <img src={portfolio.imagem} alt="" srcset=""/>
+                         <img src={portfolio.video} alt="" srcset=""/>
                            <Link to={`/project/${portfolio.id}`}>{portfolio.spam}</Link>
                     </li>
                 ))}

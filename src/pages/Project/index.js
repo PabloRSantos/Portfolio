@@ -9,7 +9,7 @@ import Contato from "../../components/Contato"
 
 import {Back, Fotos} from "./style"
 
-const Project = () => {
+const Project = (props) => {
     
     const [projects, setProjects] = useState([])
     const [limit, setLimit] = useState(1)
@@ -17,18 +17,27 @@ const Project = () => {
 
     useEffect(() => {
 
-        let newProjects = []
+        let imagens = []
+
+        let id = props.match.params.id
+
+       
+        let projects =  portfolio[id].imagem.map(imagem => imagem)
+
+        console.log(projects)
+
 
         for(let i = 0; i < limit; i++) {
-            
-            if(portfolio[i]){
-            newProjects.push(portfolio[i])
-            setProjects(newProjects)
-            }
-
+        
+            if(projects[i])
+             imagens.push(projects[i])
         }
 
-        if (limit >= portfolio.length) setVisible(false)
+        console.log(imagens)
+
+        setProjects(imagens)
+
+            if (limit >= projects.length) setVisible(false)
 
 
     }, [limit])
@@ -49,8 +58,9 @@ const Project = () => {
 
         <Fotos visible={visible}>
             {projects.map(project => (
+                
                 <li>
-                    <img src={project.imagem} alt="image"/>
+                    <img src={project} alt="image"/>
                 </li>
             ))}
 

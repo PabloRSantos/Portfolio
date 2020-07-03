@@ -1,16 +1,31 @@
-import React from "react"
+import React, {useState} from "react"
 import {Link} from 'react-scroll'
 import {Content} from "./style"
 
+import {FiMenu} from "react-icons/fi"
+
 const Header = () => {
 
+    const [visible, setVisible] = useState(true)
+
+    function handleVisible(){
+        
+        if(window.innerWidth <= 600)
+        visible === true ? setVisible(false) : setVisible(true)
+
+    }
+
     return (
-        <Content>
+        <Content visible={visible}>
+            <h3>
+                <FiMenu onClick={handleVisible}/>
+            </h3>
             <ul>
-                <Link to='Sobre' smooth={true} duration={1000}> <li>Sobre Mim</li></Link>
-                <Link to='Habilidades' smooth={true} duration={1000}> <li>Habilidades</li></Link>
-                <Link to='Websites' smooth={true} duration={1000}> <li>Websites</li></Link>
-                <Link to='Contato' smooth={true} duration={1000}> <li>Contato</li></Link>
+                <p onClick={handleVisible}>X</p>
+                <Link to='Sobre' onClick={handleVisible} smooth={true} duration={1000}> <li>Sobre Mim</li></Link>
+                <Link to='Habilidades' onClick={handleVisible} smooth={true} duration={1000}> <li>Habilidades</li></Link>
+                <Link to='Websites' onClick={handleVisible} smooth={true} duration={1000}> <li>Websites</li></Link>
+                <Link to='Contato' onClick={handleVisible} smooth={true} duration={1000}> <li>Contato</li></Link>
             </ul>
         </Content>
     )
