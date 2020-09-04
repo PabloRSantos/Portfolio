@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import {FiArrowLeft} from "react-icons/fi"
 import {Link} from "react-router-dom"
 
-import {portfolio} from "../../imagens"
+import {web} from "../../imagens"
 import Contato from "../../components/Contato"
 
 import {Back, Fotos} from "./style"
@@ -16,7 +16,7 @@ const Project = (props) => {
         let id = props.match.params.id
 
        
-        let imagens =  portfolio[id - 1].imagem.map(imagem => imagem)
+        let imagens =  web[id - 1].imagem.map(imagem => imagem)
         
         setProjects(imagens)
 

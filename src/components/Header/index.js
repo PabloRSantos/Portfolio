@@ -25,6 +25,7 @@ const Header = () => {
                 <Link to='Sobre' onClick={handleVisible} smooth={true} duration={1000}> <li>Sobre Mim</li></Link>
                 <Link to='Habilidades' onClick={handleVisible} smooth={true} duration={1000}> <li>Habilidades</li></Link>
                 <Link to='Websites' onClick={handleVisible} smooth={true} duration={1000}> <li>Websites</li></Link>
+                <Link to='Mobile' onClick={handleVisible} smooth={true} duration={1000}> <li>Aplicativos</li></Link>
                 <Link to='Contato' onClick={handleVisible} smooth={true} duration={1000}> <li>Contato</li></Link>
             </ul>
         </Content>

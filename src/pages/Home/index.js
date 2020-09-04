@@ -5,12 +5,12 @@ import {Link} from 'react-router-dom'
 import Header from '../../components/Header'
 import Contact from "../../components/Contato"
 
-import {Infos, Imagem, Sobre, Skills, Websites, ListaItem} from './style'
+import {Infos, Imagem, Sobre, Skills, Websites, ListaItem, Mobile} from './style'
 import bg from "../../assets/bg.png"
 
 
 
-import {skills, portfolio} from "../../imagens"
+import {skills, web, mobile} from "../../imagens"
 
 const Home = () => {
 
@@ -75,16 +75,35 @@ const Home = () => {
             <h1>Websites</h1>
             <ul>
             
-                {portfolio.map(portfolio => (
-                    <li key={portfolio.id}>
-                         <img src={portfolio.capa} alt="" srcset=""/>
-                           <Link to={`/project/${portfolio.id}`}>{portfolio.spam}</Link>
+                {web.map(web => (
+                    <li key={web.id}>
+                         <img src={web.capa} alt="" srcset=""/>
+                           <Link to={`/project/${web.id}`}>{web.spam}</Link>
                     </li>
                 ))}
 
             </ul>
 
         </Websites>
+
+
+        <Mobile id='Mobile'>
+            <h1>Aplicativos</h1>
+            <ul>
+            
+                {mobile.map(mobile => (
+                    <li key={mobile.id}>
+                        <div className='images'>
+                            <img src={mobile.capa[0]} alt="" srcset=""/>
+                            <img src={mobile.capa[1]} alt="" srcset=""/>
+                        </div>
+                           <Link to={`/project/${mobile.id}`}>{mobile.spam}</Link>
+                    </li>
+                ))}
+
+            </ul>
+
+        </Mobile>
 
         <Contact />
 

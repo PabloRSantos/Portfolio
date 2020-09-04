@@ -11,8 +11,7 @@ import ReactNative from "./assets/Icons/ReactNative.png"
 import NodeJS from "./assets/Icons/NodeJS.png"
 
 
-
-//PORTFOLIO
+//web
 
 import Proffy1 from "./assets/Web/Proffy/landing.png"
 import Proffy2 from "./assets/Web/Proffy/login.png"
@@ -36,7 +35,6 @@ import FlexLayout3 from "./assets/Web/FlexLayout/3.png"
 import FlexLayout4 from "./assets/Web/FlexLayout/4.png"
 import FlexLayout5 from "./assets/Web/FlexLayout/5.png"
 
-
 import  MercadoLivre1 from "./assets/Web/MercadoLivre/produto.png"
 import  MercadoLivre2 from "./assets/Web/MercadoLivre/produto2.png"
 import  MercadoLivre3 from "./assets/Web/MercadoLivre/produtos.png"
@@ -55,6 +53,23 @@ import DragAndDrop4 from "./assets/Web/DragAndDrop/4.png"
 import DragAndDrop5 from "./assets/Web/DragAndDrop/5.png"
 import DragAndDrop6 from "./assets/Web/DragAndDrop/6.png"
 import DragAndDrop7 from "./assets/Web/DragAndDrop/7.png"
+
+//MOBILE
+
+import ProffyMobile1 from "./assets/Mobile/Proffy/splash-mobile.jpeg"
+import ProffyMobile2 from "./assets/Mobile/Proffy/landing-mobile.jpeg"
+import ProffyMobile3 from "./assets/Mobile/Proffy/login-mobile.jpeg"
+import ProffyMobile4 from "./assets/Mobile/Proffy/cadastro1-mobile.jpeg"
+import ProffyMobile5 from "./assets/Mobile/Proffy/cadastro2-mobile.jpeg"
+import ProffyMobile6 from "./assets/Mobile/Proffy/forgotpassword-mobile.jpeg"
+import ProffyMobile7 from "./assets/Mobile/Proffy/profile-mobile.jpeg"
+import ProffyMobile8 from "./assets/Mobile/Proffy/teacherlist-mobile.jpeg"
+import ProffyMobile9 from "./assets/Mobile/Proffy/filtro-mobile.jpeg"
+
+import PizzariaMobile1 from "./assets/Mobile/Pizzaria/home.jpeg"
+import PizzariaMobile2 from "./assets/Mobile/Pizzaria/carrinho.jpeg"
+import PizzariaMobile3 from "./assets/Mobile/Pizzaria/login.jpeg"
+
 
 //CONTATOS
 
@@ -116,7 +131,7 @@ export const skills = [
   
 ]
 
-export const portfolio = [
+export const web = [
     
     {
         spam: "NLW#1 Ecoleta",
@@ -156,6 +171,22 @@ export const portfolio = [
         imagem: [DragAndDrop1, DragAndDrop2, DragAndDrop3, DragAndDrop4, DragAndDrop5,
             DragAndDrop6, DragAndDrop7],
         id: 6
+    },
+]
+
+export const mobile = [
+    {
+        spam: "NLW#2 Proffy",
+        capa: [ProffyMobile1, ProffyMobile2],
+        imagem: [ProffyMobile1, ProffyMobile2, ProffyMobile3, ProffyMobile4, ProffyMobile5,
+            ProffyMobile6, ProffyMobile7, ProffyMobile8, ProffyMobile9],
+        id: 2
+    },
+    {
+        spam: "Pizzaria",
+        capa: [PizzariaMobile1, PizzariaMobile2],
+        imagem: [PizzariaMobile1, PizzariaMobile2, PizzariaMobile3],
+        id: 3
     },
 ]
 

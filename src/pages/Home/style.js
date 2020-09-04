@@ -151,7 +151,7 @@ export const ListaItem = styled.li`
 
 export const Websites = styled.section`
      
-    padding: 50px 20%;
+    padding: 50px 15%;
     background-color: ${props => props.theme.colors.secundaria};
 
     display: flex;
@@ -185,6 +185,42 @@ export const Websites = styled.section`
         font-weight: 400;
         font-size: 14px;
         cursor: pointer;
+    }
+
+`
+
+export const Mobile = styled(Websites)`
+    background-color: ${props => props.theme.colors.primaria};
+
+    .images {
+        display: flex;
+        justify-content: center;
+
+        > img {
+            height: 450px;
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 680px){
+        .images {
+            > img {
+                height: 350px;
+            }
+         }
+
+    }
+
+    @media (max-width: 515px){
+        .images {
+            flex-direction: column;
+            align-items: center;
+
+            > img {
+                height: 550px;
+            }
+         }
+
     }
 
 `
