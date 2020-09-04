@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <Contato id='Contato'> 
 
-        <h1>Contatos</h1>
+        <h1>Contato</h1>
         
         <div>
 

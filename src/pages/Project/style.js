@@ -46,9 +46,4 @@ export const Fotos = styled.div`
         color: ${props => props.theme.colors.txtPrimario};
         font-size: 50px;
     }
-
-    .setaDown {
-        cursor: ${props => props.visible === true ? "pointer" : "default"};
-        opacity: ${props => props.visible === true ? 1 : .2};
-    }
 `

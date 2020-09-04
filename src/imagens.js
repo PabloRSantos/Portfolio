@@ -26,9 +26,35 @@ import Ecoleta1 from "./assets/Web/Ecoleta/home.png"
 import Ecoleta2 from "./assets/Web/Ecoleta/form1.png"
 import Ecoleta3 from "./assets/Web/Ecoleta/form2.png"
 
+import GridLayout1 from "./assets/Web/GridLayout/1.png"
+import GridLayout2 from "./assets/Web/GridLayout/2.png"
+import GridLayout3 from "./assets/Web/GridLayout/3.png"
 
-import reebok from "./assets/reebok_web.png"
+import FlexLayout1 from "./assets/Web/FlexLayout/1.png"
+import FlexLayout2 from "./assets/Web/FlexLayout/2.png"
+import FlexLayout3 from "./assets/Web/FlexLayout/3.png"
+import FlexLayout4 from "./assets/Web/FlexLayout/4.png"
+import FlexLayout5 from "./assets/Web/FlexLayout/5.png"
 
+
+import  MercadoLivre1 from "./assets/Web/MercadoLivre/produto.png"
+import  MercadoLivre2 from "./assets/Web/MercadoLivre/produto2.png"
+import  MercadoLivre3 from "./assets/Web/MercadoLivre/produtos.png"
+import  MercadoLivre4 from "./assets/Web/MercadoLivre/carrinho.png"
+import  MercadoLivre5 from "./assets/Web/MercadoLivre/cadastro.png"
+import  MercadoLivre6 from "./assets/Web/MercadoLivre/profile.png"
+import  MercadoLivre7 from "./assets/Web/MercadoLivre/chat.png"
+import  MercadoLivre8 from "./assets/Web/MercadoLivre/my-products.png"
+import  MercadoLivre9 from "./assets/Web/MercadoLivre/form.png"
+import  MercadoLivre10 from "./assets/Web/MercadoLivre/form2.png"
+
+import DragAndDrop1 from "./assets/Web/DragAndDrop/1.png"
+import DragAndDrop2 from "./assets/Web/DragAndDrop/2.png"
+import DragAndDrop3 from "./assets/Web/DragAndDrop/3.png"
+import DragAndDrop4 from "./assets/Web/DragAndDrop/4.png"
+import DragAndDrop5 from "./assets/Web/DragAndDrop/5.png"
+import DragAndDrop6 from "./assets/Web/DragAndDrop/6.png"
+import DragAndDrop7 from "./assets/Web/DragAndDrop/7.png"
 
 //CONTATOS
 
@@ -105,17 +131,31 @@ export const portfolio = [
         id: 2
     },
     {
-        spam: "Rebook Store - Concept",
-        capa: reebok,
-        imagem: [reebok, reebok, reebok, reebok, reebok],
+        spam: "Site Grid Layout",
+        capa: GridLayout1,
+        imagem: [GridLayout1, GridLayout2, GridLayout3],
         id: 3
     },
 
     {
-        spam: "Rebook Store - Concept",
-        capa: reebok,
-        imagem: [reebok, reebok, reebok, reebok, reebok],
+        spam: "Site Flex Layout",
+        capa: FlexLayout1,
+        imagem: [FlexLayout1, FlexLayout2, FlexLayout3, FlexLayout4, FlexLayout5],
         id: 4
+    },
+    {
+        spam: "Mercado Livre",
+        capa: MercadoLivre1,
+        imagem: [MercadoLivre1, MercadoLivre2, MercadoLivre3, MercadoLivre4, MercadoLivre5,
+                 MercadoLivre6, MercadoLivre7, MercadoLivre8, MercadoLivre9, MercadoLivre10],
+        id: 5
+    },
+    {
+        spam: "Drag And Drop",
+        capa: DragAndDrop1,
+        imagem: [DragAndDrop1, DragAndDrop2, DragAndDrop3, DragAndDrop4, DragAndDrop5,
+            DragAndDrop6, DragAndDrop7],
+        id: 6
     },
 ]
 
