@@ -8,12 +8,15 @@ export const Infos = styled.div`
         flex-wrap: wrap;
         width: 65%;
 
+        color: ${props => props.theme.colors.txtPrimario};
+
         margin: 40px auto;
 
     h1{
         font-size: 47px;
         text-align: left;
         font-weight: 600;
+
     }
 
     p{
@@ -61,11 +64,11 @@ export const Sobre = styled.section`
         font-weight: 600;
         font-size: 34px;
         margin-bottom: 24px;
-        color: ${props => props.theme.colors.txtPrimario};
+        color: ${props => props.theme.colors.titulo};
     }
 
     p {
-        color: ${props => props.theme.colors.txtSecundario};
+        color: ${props => props.theme.colors.txtPrimario};
         text-align: center;
         font-weight: 400;
         font-size: 18px;
@@ -74,9 +77,9 @@ export const Sobre = styled.section`
 `
 
 export const Skills = styled.section`
-     padding: 0 20%;
+     padding: 52px 15%;
      margin: 0 auto;
-     height: 100vh;
+     min-height: 100vh;
      width: 100%;
      
      display: flex;
@@ -87,58 +90,62 @@ export const Skills = styled.section`
         text-align: center;
         font-weight: 600;
         font-size: 34px;
-        margin-bottom: 24px;
-        color: ${props => props.theme.colors.txtPrimario};
+        margin-bottom: 14px;
+        color: ${props => props.theme.colors.titulo};
      }
 
     p {
-        color: ${props => props.theme.colors.txtSecundario};
+        color: ${props => props.theme.colors.txtPrimario};
         text-align: center;
         font-weight: 400;
         font-size: 14px;
-        margin-top: 8px;
     }
 
-    div {
-       color: ${props => props.theme.colors.txtSecundario};
 
-       display: flex;
-       align-items: center;
-       justify-content: space-around;
+       > ul {
+        color: ${props => props.theme.colors.txtSecundario};
+        width: 70%;
+        
+        margin-top: 24px;
 
-       padding-top: 50px;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+       
+        list-style: none;
+
+        }
 
 `
 
-export const ListaSkill = styled.ul`
+export const ListaItem = styled.li`
+            margin: 25px 0px;
+            display: flex;
+            align-items: center;
+            width: 100%;
 
-        display: flex;
-       
-        padding-bottom: 30px;
-        list-style: none;
+            > img {
+                width: 50px;
+                margin-right: 14px;
+            }
 
-        max-width: 100%;
-        overflow-x: scroll;
+            > div {
+                flex: 1;
+                
+                display: flex;
+                flex-direction: column;
+                
 
-        ::-webkit-scrollbar {
-    background-color: ${props => props.theme.colors.primaria};
-    height: 6px;
-  }
+                > div {
+                    width: ${props => props.porcent}%;
+                    background-color: ${props => props.color};
+                    height: 14px;
+                    border-radius: 8px;
+                    margin-top: 5px;
 
-  ::-webkit-scrollbar-thumb {
-    background-color: ${props => props.theme.colors.txtSecundario};
-    border-radius: 5px;
-
-}
-
-    li {
-        margin: 0 50px;
-    }
-
-    img {
-        width: 75px;
-    }
+                }
+            }
 
 `
 
@@ -155,7 +162,7 @@ export const Websites = styled.section`
         font-weight: 600;
         font-size: 34px;
         margin-bottom: 50px;
-        color: ${props => props.theme.colors.txtPrimario};
+        color: ${props => props.theme.colors.titulo};
     }
 
     ul {
@@ -178,9 +185,6 @@ export const Websites = styled.section`
         font-weight: 400;
         font-size: 14px;
         cursor: pointer;
-    }
-
-
     }
 
 `

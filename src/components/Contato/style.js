@@ -22,7 +22,7 @@ export const Contato = styled.section`
         font-size: 34px;
         text-align: center;
         margin-bottom: 50px;
-        color: ${props => props.theme.colors.txtPrimario};
+        color: ${props => props.theme.colors.titulo};
     }
 
     button {

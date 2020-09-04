@@ -16,18 +16,19 @@ ul {
     font-size: 18px;
     font-weight: 400;
 
-    border-bottom: ${props =>props.theme.colors.txtSecundario} 1px solid;
+    border-bottom: ${props =>props.theme.colors.txtPrimario} 1px solid;
 
     list-style: none;
 }
 
 li {
+    color: ${props => props.theme.colors.txtPrimario};
     cursor: pointer;
     transition: .5s;
 }
 
 li:hover {
-    color: ${props => props.theme.colors.txtPrimario}
+    color: ${props => props.theme.colors.titulo}
 }
 
 h3, p {
@@ -47,7 +48,7 @@ h3, p {
         width: 100vw;
 
         font-size: 34px;
-        color: ${props =>props.theme.colors.txtSecundario};
+        color: ${props =>props.theme.colors.txtPrimario};
 
         flex-direction: column;
         align-items: flex-start;

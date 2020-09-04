@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import Header from '../../components/Header'
 import Contact from "../../components/Contato"
 
-import {Infos, Imagem, Sobre, Skills, Websites, ListaSkill} from './style'
+import {Infos, Imagem, Sobre, Skills, Websites, ListaItem} from './style'
 import bg from "../../assets/bg.png"
 
 
@@ -55,18 +55,19 @@ const Home = () => {
 
             <p>Eu trabalho com aplicativos como:</p>
 
-            <div>
 
-                <ListaSkill>
+                <ul>
                    {skills.map(skill => (
-                       <li>
+                       <ListaItem color={skill.color} porcent={skill.porcent}>
                            <img src={skill.imagem} alt="" srcset=""/>
-                           <p>{skill.nome}</p>
-                       </li>
+                           <div>
+                                <p>{skill.nome} - {skill.porcent}%</p>
+                                <div/>
+                           </div>
+                       </ListaItem>
                    ))}
-                </ListaSkill>
+                </ul>
 
-            </div>
            
         </Skills>
 
@@ -76,7 +77,7 @@ const Home = () => {
             
                 {portfolio.map(portfolio => (
                     <li>
-                         <img src={portfolio.video} alt="" srcset=""/>
+                         <img src={portfolio.capa} alt="" srcset=""/>
                            <Link to={`/project/${portfolio.id}`}>{portfolio.spam}</Link>
                     </li>
                 ))}
