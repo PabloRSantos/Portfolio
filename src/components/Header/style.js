@@ -1,4 +1,10 @@
 import styled from "styled-components"
+import {FiMenu} from "react-icons/fi"
+
+export const HamburguerMenu = styled(FiMenu)`
+    color: ${props => props.theme.colors.txtPrimario};
+`
+
 
 export const Content = styled.header`
 
@@ -36,7 +42,7 @@ h3, p {
 }
 
 
-@media(max-width: 600px) {
+@media(max-width: 750px) {
 
     position: relative;
     
@@ -68,7 +74,8 @@ h3, p {
         justify-self: flex-end;
         align-self: flex-end;
         cursor: pointer;
-        display: flex;
+
+        padding-right: 5vw;
     }
 
     p, li {

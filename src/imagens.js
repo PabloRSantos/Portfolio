@@ -10,7 +10,6 @@ import React from "./assets/Icons/React.png"
 import ReactNative from "./assets/Icons/ReactNative.png"
 import NodeJS from "./assets/Icons/NodeJS.png"
 
-
 //web
 
 import Proffy1 from "./assets/Web/Proffy/landing.png"

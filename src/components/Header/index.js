@@ -1,8 +1,7 @@
 import React, {useState} from "react"
 import {Link} from 'react-scroll'
-import {Content} from "./style"
+import {Content, HamburguerMenu} from "./style"
 
-import {FiMenu} from "react-icons/fi"
 
 const Header = () => {
 
@@ -18,7 +17,7 @@ const Header = () => {
     return (
         <Content visible={visible}>
             <h3>
-                <FiMenu onClick={handleVisible}/>
+                <HamburguerMenu onClick={handleVisible}/>
             </h3>
             <ul>
                 <p onClick={handleVisible}>X</p>

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import {FiArrowLeft} from "react-icons/fi"
 import {Link} from "react-router-dom"
 
-import {web} from "../../imagens"
+import {web, mobile} from "../../imagens"
 import Contato from "../../components/Contato"
 
 import {Back, Fotos} from "./style"
@@ -14,9 +14,12 @@ const Project = (props) => {
     useEffect(() => {
 
         let id = props.match.params.id
+        let type = props.match.params.type
 
        
-        let imagens =  web[id - 1].imagem.map(imagem => imagem)
+        let imagens =  type === 'web' ?
+            web[id - 1].imagem.map(imagem => imagem) :
+            mobile[id - 1].imagem.map(imagem => imagem)
         
         setProjects(imagens)
 

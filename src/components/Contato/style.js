@@ -27,8 +27,8 @@ export const Contato = styled.section`
 
     button {
         background-color: ${props => props.theme.colors.bgButton};
+        border: 1px solid ${props => props.theme.colors.bgButton};
 
-        border: none;
         border-radius: 10px;
 
         outline: none;
@@ -41,6 +41,13 @@ export const Contato = styled.section`
         color: ${props => props.theme.colors.primaria};
 
         cursor: pointer;
+
+        transition: .3s;
+
+        &:hover {
+            background-color: ${props => props.theme.colors.primaria};
+            color: ${props => props.theme.colors.bgButton};
+        }
         
     }
 

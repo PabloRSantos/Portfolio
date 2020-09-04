@@ -170,7 +170,7 @@ export const Websites = styled.section`
     }
 
     ul li + li {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     ul img {
@@ -183,7 +183,7 @@ export const Websites = styled.section`
         display: block;
         color: ${props => props.theme.colors.txtPrimario};
         font-weight: 400;
-        font-size: 14px;
+        font-size: 18px;
         cursor: pointer;
     }
 
@@ -195,6 +195,7 @@ export const Mobile = styled(Websites)`
     .images {
         display: flex;
         justify-content: center;
+        flex-shrink: 0;
 
         > img {
             height: 450px;
@@ -202,26 +203,22 @@ export const Mobile = styled(Websites)`
         }
     }
 
-    @media (max-width: 680px){
+    @media (max-width: 600px){
         .images {
-            > img {
-                height: 350px;
-            }
-         }
 
+            > img {
+                height: 300px;
+            }
+        }
     }
 
-    @media (max-width: 515px){
+    @media (max-width: 414px){
         .images {
             flex-direction: column;
-            align-items: center;
-
-            > img {
-                height: 550px;
-            }
-         }
-
+        }
     }
+
+  
 
 `
 
