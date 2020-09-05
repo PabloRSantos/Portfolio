@@ -2,10 +2,11 @@ import React, {useEffect} from "react"
 import {Link} from 'react-router-dom'
 
 
+
 import Header from '../../components/Header'
 import Contact from "../../components/Contato"
 
-import {Infos, Imagem, Sobre, Skills, Websites, ListaItem, Mobile} from './style'
+import {Infos, Imagem, Sobre, Skills, Websites, ListaItem, Mobile, ScrollLink} from './style'
 import bg from "../../assets/bg.png"
 
 
@@ -34,24 +35,23 @@ const Home = () => {
 
         <Sobre id='Sobre'>
             <h1>Sobre Mim</h1>
-            <p>Hi, I'm Denis – UX/UI designer   from Minsk. 
+            <p>Estudante do EM integrado ao Tec. em Informática no IFRS - Campus Osório.
             <br/>
-                I'm interested in design and everything connected with it.
+                Sou um programador Javascript full stack
                 <br/>
                 <br/>
                 <br/>
-                I'm studying at courses "Web and mobile design 
-                interfaces" in IT-Academy.
+                Atualmente, estou aceitando propostas de emprego ou freelances
                 <br/>
                 <br/>
                 <br/>
-                Ready to implement excellent projects
-                with wonderful people.
+                Caso queira me conhecer melhor,{' '}   
+                <ScrollLink to='Contato' smooth={true} duration={1000}>clique aqui.</ScrollLink>
             </p>
         </Sobre>
 
         <Skills id='Habilidades'>
-            <h1>Skills</h1>
+            <h1>Habilidades</h1>
 
             <p>Eu trabalho com aplicativos como:</p>
 

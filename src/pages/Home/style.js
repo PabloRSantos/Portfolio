@@ -1,4 +1,15 @@
 import styled from "styled-components"
+import {Link} from 'react-scroll'
+
+export const ScrollLink = styled(Link)`
+    cursor: pointer;
+    color: ${props => props.theme.colors.txtPrimario};
+    transition: .3s;
+
+    &:hover {
+        color:  ${props => props.theme.colors.titulo};
+    }
+`
 
 export const Infos = styled.div`
 

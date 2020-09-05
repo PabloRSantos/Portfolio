@@ -82,6 +82,10 @@ export const Contato = styled.section`
 const Icons = css`
     color: ${props => props.theme.colors.titulo};
     cursor: pointer;
+
+    &:hover {
+        color: ${props => props.theme.colors.txtSecundario};
+    }
 `
 
 export const EmailIcon = styled(AiOutlineMail).attrs({
