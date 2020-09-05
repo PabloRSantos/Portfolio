@@ -4,14 +4,13 @@ import {Link} from 'react-router-dom'
 
 import Header from '../../components/Header'
 import Contact from "../../components/Contato"
-import ThemeSwitcher from "../../components/ThemeSwitcher"
 
 import {Infos, Imagem, Sobre, Skills, Websites, ListaItem, Mobile} from './style'
 import bg from "../../assets/bg.png"
 
 
 
-import {skills, web, mobile} from "../../imagens"
+import {skills, web, mobile} from "../../utils/imagens"
 
 const Home = () => {
     useEffect(() => {
@@ -20,7 +19,6 @@ const Home = () => {
 
     return (
         <>
-          <ThemeSwitcher />  
 
           <Header />
         <section>
@@ -30,7 +28,7 @@ const Home = () => {
             </Infos>
 
             <Imagem>
-                <img src={bg} alt="" srcset=""/>
+                <img src={bg} alt="background imagem"/>
             </Imagem>
         </section>
 
@@ -60,8 +58,8 @@ const Home = () => {
 
                 <ul>
                    {skills.map(skill => (
-                       <ListaItem color={skill.color} porcent={skill.porcent}>
-                           <img src={skill.imagem} alt="" srcset=""/>
+                       <ListaItem key={skill.nome} color={skill.color} porcent={skill.porcent}>
+                           <img src={skill.imagem} alt="skill"/>
                            <div>
                                 <p>{skill.nome} - {skill.porcent}%</p>
                                 <div/>
@@ -79,7 +77,7 @@ const Home = () => {
             
                 {web.map(web => (
                     <li key={web.id}>
-                         <img src={web.capa} alt="" srcset=""/>
+                         <img src={web.capa} alt=""/>
                            <Link to={`/project/web/${web.id}`}>{web.spam}</Link>
                     </li>
                 ))}
@@ -96,8 +94,8 @@ const Home = () => {
                 {mobile.map(mobile => (
                     <li key={mobile.id}>
                         <div className='images'>
-                            <img src={mobile.capa[0]} alt="" srcset=""/>
-                            <img src={mobile.capa[1]} alt="" srcset=""/>
+                            <img src={mobile.capa[0]} alt=""/>
+                            <img src={mobile.capa[1]} alt=""/>
                         </div>
                            <Link to={`/project/mobile/${mobile.id}`}>{mobile.spam}</Link>
                     </li>
@@ -107,7 +105,7 @@ const Home = () => {
 
         </Mobile>
 
-        <Contact />
+        <Contact backgroundColor='secundaria'/>
 
         </>
     )

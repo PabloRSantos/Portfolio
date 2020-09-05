@@ -36,7 +36,8 @@ export const Imagem = styled.div`
 
     max-width: 100%;
     width: 65%;
-    height: 380px;
+    height: 30vw;
+    min-height: 380px;
     margin: 0 auto 100px;
 
     img {
@@ -104,7 +105,7 @@ export const Skills = styled.section`
 
        > ul {
         color: ${props => props.theme.colors.txtSecundario};
-        width: 70%;
+        width: 93%;
         
         margin-top: 24px;
 
@@ -127,6 +128,8 @@ export const ListaItem = styled.li`
 
             > img {
                 width: 50px;
+                max-height: 55px;
+                object-fit: contain;
                 margin-right: 14px;
             }
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: fixed;
-  top: 30px;
+  bottom: 30px;
   right: 30px;
   border: 1px solid ${props => props.theme.colors.titulo};
   

@@ -10,6 +10,10 @@ export const Contato = styled.section`
     padding: 100px 20%;
     height: 100vh;
 
+    background-color: ${props => props.backgroundColor === 'primaria' ? 
+        props.theme.colors.primaria :
+        props.theme.colors.secundaria};
+
     display: flex;
         flex-direction: column;
         align-items: center;

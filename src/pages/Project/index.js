@@ -2,28 +2,25 @@ import React, {useEffect, useState} from "react"
 import {FiArrowLeft} from "react-icons/fi"
 import {Link} from "react-router-dom"
 
-import {web, mobile} from "../../imagens"
+import {web, mobile} from "../../utils/imagens"
 import Contato from "../../components/Contato"
 
 import {Back, Fotos} from "./style"
 
 const Project = (props) => {
-    
     const [projects, setProjects] = useState([])
+    let id = props.match.params.id
+    let type = props.match.params.type
 
     useEffect(() => {
 
-        let id = props.match.params.id
-        let type = props.match.params.type
+        let imagens = type === 'web' ?
+            web[id - 1].imagem :
+            mobile[id - 1].imagem
 
-       
-        let imagens =  type === 'web' ?
-            web[id - 1].imagem.map(imagem => imagem) :
-            mobile[id - 1].imagem.map(imagem => imagem)
-        
         setProjects(imagens)
 
-    }, [])
+    }, [id, type])
     
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -39,16 +36,16 @@ const Project = (props) => {
             </Link>
          </Back>
 
-        <Fotos>
+        <Fotos type={props.match.params.type}>
             {projects.map((project, index) => (
                 
                 <li key={index}>
-                    <img src={project} alt="image"/>
+                    <img src={project} alt="imagem"/>
                 </li>
             ))}
         </Fotos>
 
-        <Contato />
+        <Contato backgroundColor='primaria'/>
         </>
     )
 }

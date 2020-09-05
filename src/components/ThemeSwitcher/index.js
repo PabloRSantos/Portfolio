@@ -12,7 +12,7 @@ function ThemeSwitcher() {
    const themeChange = useCallback(() => {
        switchTheme()
         tema === 'dark' ? setTema('light') : setTema('dark')
-   }) 
+   }, [tema, switchTheme]) 
 
   return (
       <Container onClick={themeChange} tema={tema}>

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
 export const Back = styled.div`
 
@@ -21,7 +21,7 @@ export const Back = styled.div`
     }
 `
 
-export const Fotos = styled.div`
+export const Fotos = styled.ul`
     
     margin: 0 auto;
     padding: 0 20% 50px;
@@ -30,12 +30,20 @@ export const Fotos = styled.div`
     flex-direction: column;
     align-items: center;
 
+    ${props => props.type === 'mobile' && css`
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    `}
+
     background-color: ${props => props.theme.colors.secundaria};
 
     list-style: none;
 
     li {
         padding: 50px 0;
+        margin: 0 10px;
     }
 
     img {
