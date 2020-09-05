@@ -1,4 +1,9 @@
-import styled from "styled-components"
+import styled, {css} from "styled-components"
+import { 
+     AiOutlineMail,
+     AiFillLinkedin,
+     AiFillGithub } from "react-icons/ai";
+
 
 export const Contato = styled.section`
 
@@ -60,6 +65,7 @@ export const Contato = styled.section`
     ul li {
         margin: 40px 25px 0;
         cursor: pointer;
+        width: 33%;
     }
 
     p {
@@ -68,4 +74,29 @@ export const Contato = styled.section`
         font-weight: 400;
         font-size: 18px;
     }
+`
+const Icons = css`
+    color: ${props => props.theme.colors.titulo};
+    cursor: pointer;
+`
+
+export const EmailIcon = styled(AiOutlineMail).attrs({
+    size: 40
+})`
+    ${Icons}
+`
+
+export const LinkedinIcon = styled(AiFillLinkedin).attrs({
+    size: 40
+})`
+    ${Icons}
+
+
+`
+
+export const GithubIcon = styled(AiFillGithub).attrs({
+    size: 40
+})`
+    ${Icons}
+
 `

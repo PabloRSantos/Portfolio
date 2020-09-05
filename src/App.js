@@ -3,16 +3,24 @@ import Routes from "./routes"
 
 import GlobalStyle from "./styles/global"
 import {ThemeProvider} from "styled-components"
-import light from './styles/themes/light'
-import dark from './styles/themes/dark'
+import ThemeProviderContext from './context/theme'
+import ThemeSwitcher from './components/ThemeSwitcher'
+
 
 
 function App() {
+
+
   return (
-    <ThemeProvider theme={dark}>
-    <GlobalStyle />
-    <Routes />
-    </ThemeProvider>
+    <ThemeProviderContext>
+      {values => (
+          <ThemeProvider theme={values.tema}>
+            <GlobalStyle />
+            <ThemeSwitcher />
+            <Routes/>
+          </ThemeProvider>
+      )}
+    </ThemeProviderContext>
   )
 }
 

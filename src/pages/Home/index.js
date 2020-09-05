@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 
 import Header from '../../components/Header'
 import Contact from "../../components/Contato"
+import ThemeSwitcher from "../../components/ThemeSwitcher"
 
 import {Infos, Imagem, Sobre, Skills, Websites, ListaItem, Mobile} from './style'
 import bg from "../../assets/bg.png"
@@ -19,6 +20,8 @@ const Home = () => {
 
     return (
         <>
+          <ThemeSwitcher />  
+
           <Header />
         <section>
             <Infos>

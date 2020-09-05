@@ -1,8 +1,7 @@
 import React from "react"
 
-import {Contato} from "./style"
+import {Contato, EmailIcon, LinkedinIcon, GithubIcon} from "./style"
 
-import {contatos} from "../../imagens"
 
 
 const Contact = () => {
@@ -20,12 +19,31 @@ const Contact = () => {
           
 
             <ul>
-                
-                {contatos.map(contato => (
-                    <li>
-                        <img src={contato.imagem} alt="" srcset=""/>
-                    </li>
-                ))}
+
+                <li>
+                    <a 
+                     href='mailto: pablorsantos15@gmail.com'
+                     target="_blank">
+                        <EmailIcon />
+                    </a>
+                </li>
+
+                <li>
+                    <a 
+                      href='https://www.linkedin.com/in/pablo-rosa-68136a1b2/'
+                      target="_blank">
+                        <LinkedinIcon />
+                    </a>
+                </li>
+
+                <li>
+                    <a 
+                      href='https://github.com/PabloRSantos'
+                      target="_blank">
+                        <GithubIcon />
+                    </a>
+                </li>
+
 
             </ul>
 

@@ -9,7 +9,7 @@ const Header = () => {
 
     function handleVisible(){
         
-        if(window.innerWidth <= 600)
+        if(window.innerWidth <= 750)
         visible === true ? setVisible(false) : setVisible(true)
 
     }

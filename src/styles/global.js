@@ -1,10 +1,14 @@
 import { createGlobalStyle } from "styled-components"
 
+
+
 export default createGlobalStyle`
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background-color .3s;
 }
 
 body {
@@ -17,12 +21,13 @@ body {
 body::-webkit-scrollbar {
     background-color: ${props => props.theme.colors.secundaria};
     width: 12px;
+    transition: background-color .3s;
   }
 
 body::-webkit-scrollbar-thumb {
     background-color: ${props => props.theme.colors.txtPrimario};
     border-radius: 5px;
-
+    transition: background-color .3s;
 }
 
 `

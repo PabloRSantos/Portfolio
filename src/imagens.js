@@ -72,8 +72,6 @@ import PizzariaMobile3 from "./assets/Mobile/Pizzaria/login.jpeg"
 
 //CONTATOS
 
-import LinkeIn from "./assets/LinkeIn.png"
-
 export const skills = [
     {
         nome: "Premiere",
@@ -187,24 +185,4 @@ export const mobile = [
         imagem: [PizzariaMobile1, PizzariaMobile2, PizzariaMobile3],
         id: 3
     },
-]
-
-export const contatos = [
-    
-    {
-        imagem: LinkeIn
-    },
-
-    {
-        imagem: LinkeIn
-    },
-
-    {
-        imagem: LinkeIn
-    },
-
-    {
-        imagem: LinkeIn
-    },
-
 ]
